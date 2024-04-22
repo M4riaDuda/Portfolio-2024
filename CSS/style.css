@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    /* Zera as configurações padrões */
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(61, 17, 17), rgb(209, 138, 138));
+    /* Gradiante */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex; /* Quando definimos que ele é um dislpay flex, ganhamos novas propriedades */
+    flex-direction: column;
+    align-items: center; /* Justifica na horizontal */
+    justify-content: center; /* Justifica na vertical */
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+header img {
+    width: 150px;
+    /* Tamanho da imagem */
+    border: 5px dashed rgb(209, 138, 138);
+    /* Borda: solid, dashed */
+    border-radius: 0;
+    /* Arredondar a borda */
+}
+
+header nav li {
+    color: rgb(61, 17, 17);
+    /* Cor dos textos */
+    text-transform: uppercase;
+    /* Deixa os textos em capslock */
+    display: inline;
+    /* Deixa os itens alinhados */
+    padding: 25px;
+    /* Adiciona um espaçamento entre os itens: top entre as palavras*/
+}
+
+header nav {
+    padding: 40px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    /* Retira a underline do link */
+}
+
+/* Hover serve para aplicar quando o cursos passar pelo elemento */
+header nav ul li:hover {
+    background-color: rgb(209, 138, 138);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 15px;
+}
